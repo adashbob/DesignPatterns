@@ -2,20 +2,18 @@
 #define DESIGNPATTERNS_SINGLETON_H
 
 
-class Singleton {
+template <typename T> class Singleton {
 
 protected:
-    static Singleton instance;
-public:
-    static Singleton& getInstance();
-    Singleton operator = (const Singleton&){};
-    Singleton(const Singleton&){};
+    static T instance;
 
-private:
-    ~Singleton();
-    Singleton();
+public:
+    static T& getInstance();
+    T& operator = (const T&){};
 
 };
+
+
 
 
 #endif //DESIGNPATTERNS_SINGLETON_H
