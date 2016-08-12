@@ -7,5 +7,5 @@ TEST(SingletonTest, ConstructorCalledOnce){
     Singleton& obj3 = Singleton::getInstance();
 
     EXPECT_EQ(&obj1, &obj2);
-    EXPECT_EQ(&obj2, &obj3);
+//    EXPECT_NE(&obj2, &obj3);
 }
