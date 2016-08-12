@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
-#include <Singleton/Connexion.h>
+#include <Singleton/Singleton.h>
 
 TEST(SingletonTest, ConstructorCalledOnce){
-    Singleton<Connexion>& obj1 = Singleton<Connexion>::getInstance();
-    Singleton<Connexion>& obj2 = Singleton<Connexion>::getInstance();
-    Singleton<Connexion>& obj3 = Singleton<Connexion>::getInstance();
+    Singleton& obj1 = Singleton::getInstance();
+    Singleton& obj2 = Singleton::getInstance();
+    Singleton& obj3 = Singleton::getInstance();
 
     EXPECT_EQ(&obj1, &obj2);
 //    EXPECT_NE(&obj2, &obj3);

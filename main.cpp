@@ -1,9 +1,14 @@
 #include <iostream>
 #include <Singleton/Singleton.h>
-#include <Singleton/Connexion.h>
+
+using namespace std;
 
 int main() {
-    Singleton<Connexion>& obj1 = Singleton<Connexion>::getInstance();
-    Singleton<Connexion>& obj2 = Singleton<Connexion>::getInstance();
-    Singleton<Connexion>& obj3 = Singleton<Connexion>::getInstance();
+    Singleton& obj1 = Singleton::getInstance();
+    Singleton& obj2 = Singleton::getInstance();
+    Singleton& obj3 = Singleton::getInstance();
+
+    cout<< " obj1 : " << &obj1 << endl;
+    cout<< " obj1 : " << &obj2 << endl;
+    cout<< " obj1 : " << &obj3 << endl;
 }
