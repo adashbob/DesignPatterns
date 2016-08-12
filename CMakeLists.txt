@@ -8,8 +8,9 @@ set(SOURCE_FILES main.cpp)
 
 # libs directories
 include_directories(src)
+
 add_subdirectory(src)
-#add_subdirectory(Tests)
+add_subdirectory(Tests)
 
 # Exec
 add_executable(DesignPatterns.x ${SOURCE_FILES})

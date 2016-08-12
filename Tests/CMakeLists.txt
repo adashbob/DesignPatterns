@@ -1,4 +1,4 @@
 project(DesignPatternsTests)
 
-include_directories(${gtest})
-target_link_libraries()
+add_subdirectory(lib/googletest)
+add_subdirectory(SingletonTest)
